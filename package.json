@@ -1,0 +1,34 @@
+{
+    "name": "react-firebase-files-uploader",
+    "version": "0.0.1",
+    "author": "Amin Allahham <amin.allahham@hypatia.tech>",
+    "description": "A simple react firebase files uploader to your storage",
+    "scripts": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AminAllahham9/react-firebase-files-uploader.git"
+    },
+    "keywords": [
+        "storage",
+        "firebase",
+        "upload"
+    ],
+    "bugs": {
+        "url": "https://github.com/AminAllahham9/react-firebase-files-uploader/issues"
+    },
+    "homepage": "https://github.com/AminAllahham9/react-firebase-files-uploader#readme",
+    "devDependencies": {
+        "@types/lodash": "^4.14.160",
+        "@types/react": "^16.9.47",
+        "@types/react-dom": "^16.9.8",
+        "@types/uuid": "^8.3.0",
+        "prettier": "^2.0.5",
+        "typescript": "^3.9.6"
+    },
+    "dependencies": {
+        "firebase": "^7.19.0",
+        "lodash": "^4.17.20",
+        "react": "^16.13.1",
+        "uuid": "^8.3.0"
+    }
+}
