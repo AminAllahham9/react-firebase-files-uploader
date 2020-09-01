@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { map } from 'lodash';
 import firebase from 'firebase/app';
 import 'firebase/storage';
+import { getFileExtension } from './utils/getFileExtension';
 
 interface Props {
     storage: firebase.storage.Storage;
@@ -48,7 +49,9 @@ export const FirebaseFilesUploader = (props: Props) => {
             map(files, async (file: File) => {
                 const generatedId = uuidv4();
 
-                const fileName = randomName ? generatedId : file.name;
+                const fileExtension = getFileExtension(file.name);
+
+                const fileName = randomName ? `${generatedId}.${fileExtension}` : file.name;
 
                 let url = '';
 
